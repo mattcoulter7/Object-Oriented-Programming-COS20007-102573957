@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using SwinGameSDK;
+
+namespace TrafficController
+{
+    public class CarTrafficLight : TrafficLight
+    {
+
+        public CarTrafficLight(List<TrafficLight> trafficlights, float x, float y) : base(trafficlights,x,y)
+        {
+            Sprite.AddShape(new Rectangle(Color.Black, x, y, 40, 76));
+            Sprite.AddShape(new Circle(Color.DarkGreen, X, Y -18, 15));
+            Sprite.AddShape(new Circle(Color.Red, X, Y + 18, 15));
+        }
+
+        public override void SpawnMovingObject(int speed)
+        {
+            GetLowestCountPath().SpawnMovingObject(speed);
+        }
+    }
+}

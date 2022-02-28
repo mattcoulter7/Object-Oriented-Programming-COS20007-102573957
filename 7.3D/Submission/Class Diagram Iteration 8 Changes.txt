@@ -1,0 +1,5 @@
+CommandProcessor
+- _commands : List<Command>
++ CommandProcessor(params Command[] commands)
++ RunCommand(Player p,string[] Acommand,Path path) : string
++ AddCommandType(Command c) : void

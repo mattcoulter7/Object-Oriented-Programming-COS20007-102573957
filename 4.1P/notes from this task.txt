@@ -1,0 +1,9 @@
+using enum
+- rather than my traditional method of defining enum in an array, this can be done through the enum declaration.
+- it does not directly reference the class, however, you can make decisions on classed based off the enum value.
+- for example, in this task we initialise an enum called shapeSelected with circle and rectangle at 0 and 1 respectively. The integer assignment is automatic
+- Then, when we press c, this assigns a shape variable as a circle shape
+
+Child : Parent Class.
+
+Should always have a default contructor and one that akes in variables. 
